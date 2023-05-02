@@ -1,0 +1,32 @@
+section.stack {
+    .stack__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 64px 0px;
+        gap: 9px;
+        overflow: visible;
+
+        .stack__item {
+            height: 118px;
+            background: var(--background-two);
+            border-radius: 20px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            overflow: hidden;
+            position: relative;
+            width: 194px;
+
+            img {
+                position: absolute;
+                max-width: 154px;
+                max-height: 100px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

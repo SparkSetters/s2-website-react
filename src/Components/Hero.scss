@@ -1,0 +1,56 @@
+@import '../Components/Base';
+
+section.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 68px 0px 28px;
+    gap: 16px;
+
+    .hero__logo {
+        display: block;
+        max-width: 100%;
+        max-height: 316px;
+        height: auto;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .hero__title {
+            // semibold 23px
+            font-size: 23px;
+            font-weight: 600;
+            // 1.5 line height
+            line-height: 28px;
+            // Color orange
+            color: var(--color-orange);
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero__text {
+            font-size: 76px;
+            font-weight: 900;
+            line-height: 95px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--color-white);
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero__button {
+            margin-top: 56px;
+        }
+    }
+}
