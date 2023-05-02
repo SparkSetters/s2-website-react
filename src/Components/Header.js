@@ -1,4 +1,4 @@
-import logo from '../header_logo.svg';
+import logo from '../Assets/header_logo.svg';
 import './Header.scss';
 import Container from "../Grid/Container";
 import Row from "../Grid/Row";

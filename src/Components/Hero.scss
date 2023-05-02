@@ -13,6 +13,12 @@ section.hero {
         max-width: 100%;
         max-height: 316px;
         height: auto;
+
+        &.spread-width {
+            width: 100%;
+            height: auto;
+            max-height: unset;
+        }
     }
 
     .hero__content {
@@ -47,10 +53,25 @@ section.hero {
             color: var(--color-white);
             margin: 0;
             padding: 0;
+
+            &.smaller {
+                font-size: 56px;
+                line-height: 68px;
+            }
+        }
+
+        .hero__description {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 23px;
+            color: var(--color-gray-ish);
         }
 
         .hero__button {
-            margin-top: 56px;
+            &.margin {
+                margin-top: 56px;
+            }
         }
     }
 }

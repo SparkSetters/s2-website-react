@@ -1,4 +1,4 @@
-import spark from '../Spark.svg';
+import spark from '../Assets/Spark.svg';
 import './Hero.scss';
 import Container from "../Grid/Container";
 import Row from "../Grid/Row";
@@ -16,7 +16,7 @@ function Hero() {
                         <div className={`hero__content`}>
                             <h1 className={`hero__title`}>We are SparkSetters.</h1>
                             <p className={`hero__text`}>Community-First Marketing Agency</p>
-                            <button className={`hero__button btn-cta`}>Learn more</button>
+                            <button className={`btn-cta hero__button margin`}>Contact us</button>
                         </div>
                     </Col>
                 </Row>
