@@ -9,7 +9,6 @@ section.stats {
         justify-content: center;
         align-items: center;
         padding: 61px 90px;
-        gap: 24px;
         // pad top and bottom for shadow
         background: #1D1D25;
         box-shadow: 0px 18px 40px -23px #0A0A0D;
@@ -20,9 +19,9 @@ section.stats {
         .row {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            gap: 24px;
+            gap: var(--gutter);
             flex: 1 1 auto;
             width: 100%;
         }
@@ -31,17 +30,35 @@ section.stats {
         .stats__item {
             display: flex;
             flex-direction: row;
-            width: 18%;
+            max-width: 18%;
+
+            // Center childs vertically
+            align-items: center;
+            justify-content: space-between;
+
             .stats__title {
                 color: var(--color-white);
                 display: flex;
                 flex: 1 0 auto;
+                max-width: 33%;
+                padding-right: calc(var(--gutter) / 2);
             }
 
             .stats__description {
                 color: var(--color-gray-ish);
                 display: flex;
                 flex: 1 0 auto;
+                overflow: hidden;
+                max-width: 67%;
+                padding-left: calc(var(--gutter) / 2);
+
+                // Text needs to wrap
+                white-space: break-spaces
+            }
+
+            & + .stats__item {
+                border-left: 1px solid #9797C1;
+                padding-left: var(--gutter);
             }
         }
     }
