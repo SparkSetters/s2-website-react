@@ -14,8 +14,8 @@ function Hero() {
                     </Col>
                     <Col size={8} pull={`right`} contentJustify={`center`}>
                         <div className={`hero__content`}>
-                            <h1 className={`hero__title`}>We are SparkSetters.</h1>
-                            <p className={`hero__text`}>Community-First Marketing Agency</p>
+                            <h1 className={`hero__title`}>We are SparkSetters</h1>
+                            <p className={`hero__text`}>Community-First Marketing & Technology Solutions</p>
                             <button className={`btn-cta hero__button margin`}>Contact us</button>
                         </div>
                     </Col>

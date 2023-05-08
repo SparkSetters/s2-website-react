@@ -3,11 +3,11 @@ import Row from "../Grid/Row"
 import './Stats.scss';
 
 const stats = {
-    '523': 'Projects completed',
-    '163': 'Happy clients',
-    '431K': 'Customers scammed',
-    '$31B': 'Revenue generated',
-    '12M': 'Cups of coffee'
+    '28': 'Projects completed',
+    '163': 'Communities forged',
+    'Over 300K': 'Customers overjoyed',
+    'Over $45M': 'Revenue generated',
+    '15,768': 'Cups of coffee'
 }
 
 function Stats() {
