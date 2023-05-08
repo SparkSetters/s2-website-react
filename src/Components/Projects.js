@@ -87,7 +87,7 @@ function Projects() {
                                 {col.map((project, index) => {
                                     // Calculate px height based on width = 300px
                                     let height = 300 / project.ratio
-                                    if (project.image = `#`) {
+                                    if (project.image === `#`) {
                                         project.image = `https://via.placeholder.com/300x${height}`
                                     }
                                     return (
