@@ -1,4 +1,14 @@
+@mixin hover-active {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%) !important;
+
+    * {
+        display: flex !important;
+    }
+}
+
 section.projects {
+    padding: 6em 0;
+
     div.projects__item {
         display: block;
         width: 100%;
@@ -28,8 +38,8 @@ section.projects {
             justify-content: center;
             align-items: center;
             gap: 16px;
-            pointer-events: none;
             padding: 1em;
+            cursor: pointer;
 
             h3.projects__item-title {
                 color: var(--color-white);
@@ -50,18 +60,22 @@ section.projects {
                 line-height: 20px;
                 padding: 0;
                 margin: 0;
+                max-height: calc(100% - 32px);
+                word-break: break-word;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
+        }
+
+        &:hover label.projects__item-overlay {
+            @include hover-active;
         }
 
         input.projects__item-radio {
             display: none;
 
             &:checked + label.projects__item-overlay {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%);
-
-                * {
-                    display: flex;
-                }
+                @include hover-active;
             }
 
             &:not(:checked) + label.projects__item-overlay {

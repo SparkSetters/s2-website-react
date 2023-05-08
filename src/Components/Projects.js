@@ -22,10 +22,10 @@ const projectCols = [
         },
         {
             image: `#`,
-            title: `Project 2`,
+            title: `Project 3`,
             url: `#`,
             ratio: 3.56, // 32:9
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
         }
     ],
     [ // Col 2
@@ -96,8 +96,8 @@ function Projects() {
                                                 /* maxHeight: `${height}px`,*/
                                                 width: `100%`
                                             }} alt="project"/>
-                                            <input type={`radio`} name={`projects`} id={`projects-${index + i1}`} className={`projects__item-radio`}/>
-                                            <label className={`projects__item-overlay`} htmlFor={`projects-${index + i1}`}>
+                                            <input type={`radio`} name={`projects`} id={`projects-${i1}-${index}`} className={`projects__item-radio`}/>
+                                            <label className={`projects__item-overlay`} htmlFor={`projects-${i1}-${index}`}>
                                                 <h3 className="projects__item-title">{project.title}</h3>
                                                 <p className="projects__item-description">{project.description}</p>
                                             </label>

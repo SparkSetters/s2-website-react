@@ -5,8 +5,21 @@ section.hero {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 68px 0px 28px;
     gap: 16px;
+
+    padding: 6em 0;
+
+    &:first-of-type {
+        height: calc(100vh - 300px);
+
+        .container {
+            height: 100%;
+
+            .row {
+                height: 100%;
+            }
+        }
+    }
 
     .hero__logo {
         display: block;
