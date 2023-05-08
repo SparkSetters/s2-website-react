@@ -11,14 +11,12 @@ function Presence() {
                 <Row>
                     <Col size={8} pull={`left`} contentJustify={`center`}>
                         <div className={`hero__content`}>
-                            <h1 className={`hero__title`}>Let us spark</h1>
-                            <p className={`hero__text smaller`}>Your online presence</p>
+                            <h1 className={`hero__title`}>Ignite your evolution</h1>
+                            <p className={`hero__text smaller`}>Community is king</p>
                             <p className={`hero__description`}>
-                                Having an online presence is critical for a modern
-                                business. Interacting with your customers dynamically, providing the right information
-                                before they even ask and maximizing your conversion rates are tied in together.
-                                Our experts can advise you on what you need to do, and get it done. You will get all the
-                                bitches.
+                            Embracing a community-first marketing approach is essential for today's businesses.<br />
+                            <br />Engage with your audience effectively, deliver tailored content, and maximize your growth potential by building a strong community around your brand.<br />
+                            <br />Our experts will guide and support you in establishing a powerful online presence that resonates with your target audience.
                             </p>
                             <button className={`btn-cta hero__button`}>Contact us</button>
                         </div>
