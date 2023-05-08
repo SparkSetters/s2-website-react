@@ -1,8 +1,14 @@
+@import 'Base';
+
 section.services {
     background-color: var(--background-two);
     color: var(--color-white);
 
     padding: 6em 0;
+
+    @include bp-md {
+        padding: 0 16px;
+    }
 
     h2.services__title {
         color: var(--color-orange);
@@ -13,6 +19,12 @@ section.services {
         font-weight: 900;
         font-size: 56px;
         line-height: 68px;
+
+        @include bp-md {
+            font-size: 40px;
+            line-height: 48px;
+            margin: 1em 0;
+        }
     }
 
     .services__item {

@@ -87,4 +87,18 @@ section.hero {
             }
         }
     }
+
+    @include bp-sm {
+        padding: 1em 16px;
+        .hero__content {
+            .hero__text {
+                font-size: 48px;
+            }
+            .hero__button {
+                &.margin {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
 }

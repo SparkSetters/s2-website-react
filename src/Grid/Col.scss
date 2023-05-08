@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    overflow: hidden;
+    position: relative;
 
     flex: 1 0 0%;
 
@@ -20,118 +22,59 @@
     height: 100%;
 }
 
-.col-1 {
-    flex: 0 0 8.333333%;
-    max-width: 8.333333%;
-}
 
-.col-2 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-}
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @extend .col;
+        flex: 0 0 (100% / 12) * $i;
+        max-width: (100% / 12) * $i;
+    }
 
-.col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-}
+    .col-offset-#{$i} {
+        margin-left: (100% / 12) * $i;
+    }
 
-.col-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
+    .col-sm-#{$i} {
+        @include bp-sm {
+            flex: 0 0 (100% / 12) * $i !important;
+            max-width: (100% / 12) * $i !important;
+        }
+    }
+    .col-sm-offset-#{$i} {
+        @include bp-sm {
+            margin-left: (100% / 12) * $i !important;
+        }
+    }
 
-.col-5 {
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
-}
+    .col-md-#{$i} {
+        @include bp-md {
+            flex: 0 0 (100% / 12) * $i !important;
+            max-width: (100% / 12) * $i !important;
+        }
+    }
+    .col-md-offset-#{$i} {
+        @include bp-md {
+            margin-left: (100% / 12) * $i !important;
+        }
+    }
 
-.col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.col-7 {
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-}
-
-.col-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-}
-
-.col-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-}
-
-.col-10 {
-    flex: 0 0 83.333333%;
-    max-width: 83.333333%;
-}
-
-.col-11 {
-    flex: 0 0 91.666667%;
-    max-width: 91.666667%;
-}
-
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    .col-lg-#{$i} {
+        @include bp-lg {
+            flex: 0 0 (100% / 12) * $i !important;
+            max-width: (100% / 12) * $i !important;
+        }
+    }
+    .col-lg-offset-#{$i} {
+        @include bp-lg {
+            margin-left: (100% / 12) * $i !important;
+        }
+    }
 }
 
 .col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
-}
-
-.col-offset-1 {
-    margin-left: 8.333333%;
-}
-
-.col-offset-2 {
-    margin-left: 16.666667%;
-}
-
-.col-offset-3 {
-    margin-left: 25%;
-}
-
-.col-offset-4 {
-    margin-left: 33.333333%;
-}
-
-.col-offset-5 {
-    margin-left: 41.666667%;
-}
-
-.col-offset-6 {
-    margin-left: 50%;
-}
-
-.col-offset-7 {
-    margin-left: 58.333333%;
-}
-
-.col-offset-8 {
-    margin-left: 66.666667%;
-}
-
-.col-offset-9 {
-    margin-left: 75%;
-}
-
-.col-offset-10 {
-    margin-left: 83.333333%;
-}
-
-.col-offset-11 {
-    margin-left: 91.666667%;
-}
-
-.col-offset-12 {
-    margin-left: 100%;
 }
 
 .col-order-first {

@@ -44,7 +44,7 @@ function Services() {
                 <Row>
                     {services.map((service, index) => {
                         return (
-                            <Col size={3} key={index}>
+                            <Col size={3} sizeSm={12} key={index}>
                                 <div className="services__item">
                                     <img src={service.icon} className="services__icon" alt="icon"/>
                                     <h3 className="services__item-title">{service.title}</h3>

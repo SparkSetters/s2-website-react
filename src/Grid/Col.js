@@ -9,6 +9,15 @@ function Col() {
     if (props.size) {
         classes.push(`col-${props.size}`);
     }
+    if(props.sizeSm) {
+        classes.push(`col-sm-${props.sizeSm}`);
+    }
+    if(props.sizeMd) {
+        classes.push(`col-md-${props.sizeMd}`);
+    }
+    if(props.sizeLg) {
+        classes.push(`col-lg-${props.sizeLg}`);
+    }
     if (props.pull) {
         classes.push(`col-pull-${props.pull}`);
     }
