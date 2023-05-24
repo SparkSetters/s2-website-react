@@ -26,12 +26,10 @@ section.stats {
             width: 100%;
         }
 
-
         .stats__item {
             display: flex;
             flex-direction: row;
-            max-width: 18%;
-
+            max-width: 19%;
             align-items: center;
             justify-content: space-between;
 
@@ -39,7 +37,7 @@ section.stats {
                 color: var(--color-white);
                 display: flex;
                 flex: 1 0 auto;
-                max-width: 33%;
+                max-width: 40%;
                 padding-right: calc(var(--gutter) / 2);
             }
 
@@ -48,7 +46,7 @@ section.stats {
                 display: flex;
                 flex: 1 0 auto;
                 overflow: hidden;
-                max-width: 67%;
+                max-width: 80%;
                 padding-left: calc(var(--gutter) / 2);
 
                 // Text needs to wrap

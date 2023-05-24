@@ -31,28 +31,40 @@ section.services {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex: 1 1 auto;
         width: 100%;
         gap: 16px;
         padding: 0 8px 32px;
 
-        img.services__icon {
-            // Image needs to be centered, max height 64px
-            display: block;
+        .services__item-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: fit-content;
+            padding: 0;
             margin: 0 auto;
-            max-height: 64px;
-            width: auto;
+            text-align: left;
+        }    
+
+        img.services__icon {
+            // Netu moved icons to the left and rejigged the title because the icons were centered before, but looked "off" as each title is a different size
+            display: block;
+            margin: -120px; // Netu is not good at this.
+            max-height: 48px;
+            width: 307px;
+            object-fit: contain;
         }
 
         h3.services__item-title {
             font-style: normal;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 32px;
-            text-align: center;
+            text-align: left;
             padding: 0;
-            margin: 0;
+            margin-left: 0; // Netu is not good at this.
         }
 
         p.services__item-description {
