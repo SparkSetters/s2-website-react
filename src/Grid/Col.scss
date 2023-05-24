@@ -26,47 +26,47 @@
 @for $i from 1 through 12 {
     .col-#{$i} {
         @extend .col;
-        flex: 0 0 (100% / 12) * $i;
-        max-width: (100% / 12) * $i;
+        flex: 0 0 calc((100% / 12) * $i);
+        max-width: calc((100% / 12) * $i);
     }
 
     .col-offset-#{$i} {
-        margin-left: (100% / 12) * $i;
+        margin-left: calc((100% / 12) * $i);
     }
 
     .col-sm-#{$i} {
         @include bp-sm {
-            flex: 0 0 (100% / 12) * $i !important;
-            max-width: (100% / 12) * $i !important;
+            flex: 0 0 calc((100% / 12) * $i) !important;
+            max-width: calc((100% / 12) * $i) !important;
         }
     }
     .col-sm-offset-#{$i} {
         @include bp-sm {
-            margin-left: (100% / 12) * $i !important;
+            margin-left: calc((100% / 12) * $i) !important;
         }
     }
 
     .col-md-#{$i} {
         @include bp-md {
-            flex: 0 0 (100% / 12) * $i !important;
-            max-width: (100% / 12) * $i !important;
+            flex: 0 0 calc((100% / 12) * $i) !important;
+            max-width: calc((100% / 12) * $i) !important;
         }
     }
     .col-md-offset-#{$i} {
         @include bp-md {
-            margin-left: (100% / 12) * $i !important;
+            margin-left: calc((100% / 12) * $i) !important;
         }
     }
 
     .col-lg-#{$i} {
         @include bp-lg {
-            flex: 0 0 (100% / 12) * $i !important;
-            max-width: (100% / 12) * $i !important;
+            flex: 0 0 calc((100% / 12) * $i) !important;
+            max-width: calc((100% / 12) * $i) !important;
         }
     }
     .col-lg-offset-#{$i} {
         @include bp-lg {
-            margin-left: (100% / 12) * $i !important;
+            margin-left: calc((100% / 12) * $i) !important;
         }
     }
 }
@@ -85,6 +85,19 @@
     order: 13;
 }
 
+// For left, right, center
+@each $i in (left, right, center) {
+    .col-content-align-#{$i} {
+        align-items: #{$i};
+    }
+    .col-content-justify-#{$i} {
+        justify-content: #{$i};
+    }
+    .col-text-align-#{$i} {
+        text-align: #{$i};
+    }
+}
+
 .col-pull-left {
     right: auto;
     left: 0;
@@ -93,16 +106,4 @@
 .col-pull-right {
     right: 0;
     left: auto;
-}
-
-.col-content-justify-center {
-    justify-content: center;
-}
-
-.col-content-justify-start {
-    justify-content: flex-start;
-}
-
-.col-content-justify-end {
-    justify-content: flex-end;
 }

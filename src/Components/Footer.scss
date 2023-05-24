@@ -1,0 +1,14 @@
+@import './Base';
+
+footer.footer {
+    background-color: var(--background-two);
+    width: 100%;
+    height: auto;
+    color: var(--color-white);
+
+    padding: 2em 15px;
+
+    a, a:visited, a:active, a:hover {
+        color: var(--color-white);
+    }
+}

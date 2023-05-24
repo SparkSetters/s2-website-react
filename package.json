@@ -2,6 +2,7 @@
   "name": "s2-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sparksetters.github.io/s2-website-react/",
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -12,7 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -32,6 +34,8 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "react-helmet": "^6.1.0",
     "sass": "^1.62.1"
   }
 }

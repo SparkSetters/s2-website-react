@@ -24,6 +24,12 @@ function Col() {
     if(props.contentJustify) {
         classes.push(`col-content-justify-${props.contentJustify}`);
     }
+    if(props.contentAlign) {
+        classes.push(`col-content-align-${props.contentAlign}`);
+    }
+    if(props.textAlign) {
+        classes.push(`col-text-align-${props.textAlign}`);
+    }
 
     return (
         <div className={classes.join(' ')}>

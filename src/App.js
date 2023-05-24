@@ -6,6 +6,8 @@ import Presence from "./Components/Presence";
 import Stats from "./Components/Stats";
 import Services from "./Components/Services";
 import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
     return (<div className="App">
@@ -16,6 +18,8 @@ function App() {
         <Stats/>
         <Services/>
         <Projects/>
+        <Contact/>
+        <Footer/>
     </div>);
 }
 
