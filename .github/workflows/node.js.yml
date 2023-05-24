@@ -45,7 +45,7 @@ jobs:
       - run: npm run build --if-present
       - name: setup git authentication
         run: |
-         git config --global user.email "ieuan@sparksetters.com"
-         git config --global user.name "s2-ieuan"
-         git remote set-url origin https://s2-ieuan:${{ secrets.GITHUB_TOKEN }}@github.com/SparkSetters/s2-website-react
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git remote set-url origin https://github-actions[bot]:${{ secrets.GITHUB_TOKEN }}@github.com/SparkSetters/s2-website-react
       - run: npm run deploy --if-present
