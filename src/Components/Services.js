@@ -18,7 +18,7 @@ const services = [
     {
         icon: webdev,
         title: `Web Development`,
-        description: `We will (re)design you website, optimizing it for modern search-engines and that magical marketing science sauce. We will make sure your users can find your business, even if we have to rely on`
+        description: `We will (re)design your website, optimizing it for modern search engines and that magical marketing science sauce. We will make sure your users can find your business, even if we have to rely on`
     },
     {
         icon: ecommerce,
@@ -42,17 +42,19 @@ function Services() {
                     </Col>
                 </Row>
                 <Row>
-                    {services.map((service, index) => {
-                        return (
-                            <Col size={3} sizeSm={12} key={index}>
-                                <div className="services__item">
+                {services.map((service, index) => {
+                    return (
+                        <Col size={3} sizeSm={12} key={index}>
+                            <div className="services__item">
+                                <div className="services__item-header">
                                     <img src={service.icon} className="services__icon" alt="icon"/>
                                     <h3 className="services__item-title">{service.title}</h3>
-                                    <p className="services__item-description">{service.description}</p>
                                 </div>
-                            </Col>
-                        );
-                    })}
+                                <p className="services__item-description">{service.description}</p>
+                            </div>
+                        </Col>
+                    );
+                })}
                 </Row>
             </Container>
         </section>

@@ -7,6 +7,8 @@ import mailchimp from '../Assets/Stack/Mailchimp.png'
 import react from '../Assets/Stack/React.png'
 import paypal from '../Assets/Stack/PayPal.png'
 import stripe from '../Assets/Stack/Stripe.png'
+import hubspot from '../Assets/Stack/HubSpot.png'
+import apollo from '../Assets/Stack/Apollo.png'
 import Row from "../Grid/Row";
 import Col from "../Grid/Col";
 
@@ -37,10 +39,12 @@ function Stack() {
                 <Row className={`stack__row`}>
                     <StackItem image={discord} title={`Discord`}/>
                     <StackItem image={slack} title={`Slack`}/>
-                    <StackItem image={mailchimp} title={`Mailchimp`}/>
+                    <StackItem image={apollo} title={`Apollo`}/>
+                    {/* <StackItem image={mailchimp} title={`Mailchimp`}/> */}
                     <StackItem image={react} title={`React`}/>
                     <StackItem image={paypal} title={`Paypal`}/>
-                    <StackItem image={stripe} title={`Stripe`}/>
+                    {/* <StackItem image={stripe} title={`Stripe`}/> */}
+                    <StackItem image={hubspot} title={`HubSpot`}/>
                 </Row>
             </Container>
         </section>

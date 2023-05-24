@@ -3,11 +3,11 @@ import Row from "../Grid/Row"
 import './Stats.scss';
 
 const stats = {
-    '28': 'Projects completed',
-    '163': 'Communities forged',
+    '17': 'Projects completed',
+    '32': 'Communities forged',
     'Over 300K': 'Customers overjoyed',
     'Over $45M': 'Revenue generated',
-    '15,768': 'Cups of coffee'
+    '5,768': 'Cups of coffee'
 }
 
 function Stats() {
@@ -18,7 +18,9 @@ function Stats() {
                     {Object.keys(stats).map((key, index) => {
                         return (
                             <div className={`stats__item`} key={index}>
-                                <h2 className={`stats__title`}>{key}</h2>
+                                <div className={`icon-title-container`}>
+                                    <h2 className={`stats__title`}>{key}</h2>
+                                </div>
                                 <p className={`stats__description`}>{stats[key]}</p>
                             </div>
                         );
