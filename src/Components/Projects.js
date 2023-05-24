@@ -83,7 +83,7 @@ function Projects() {
                 <Row>
                     {projectCols.map((col, i1) => {
                         return (
-                            <Col size={4} sizeSm={6} key={i1}>
+                            <Col size={4} sizeSm={12} key={i1}>
                                 {col.map((project, index) => {
                                     // Calculate px height based on width = 300px
                                     let height = 300 / project.ratio

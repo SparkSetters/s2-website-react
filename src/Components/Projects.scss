@@ -1,3 +1,5 @@
+@import './Base';
+
 @mixin hover-active {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%) !important;
 
@@ -83,6 +85,14 @@ section.projects {
                     display: none;
                 }
             }
+        }
+    }
+    @media (#{$bp-small}) {
+        .col:not(:first-child) {
+            margin-top: 0;
+        }
+        .projects__item:last-child {
+            margin-bottom: 0;
         }
     }
 }
