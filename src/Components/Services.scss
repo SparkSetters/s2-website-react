@@ -37,34 +37,23 @@ section.services {
         gap: 16px;
         padding: 0 8px 32px;
 
-        .services__item-header {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            width: fit-content;
-            padding: 0;
-            margin: 0 auto;
-            text-align: left;
-        }    
-
-        img.services__icon {
-            // Netu moved icons to the left and rejigged the title because the icons were centered before, but looked "off" as each title is a different size
-            display: block;
-            margin: -120px; // Netu is not good at this.
-            max-height: 48px;
-            width: 307px;
-            object-fit: contain;
-        }
-
         h3.services__item-title {
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
-            line-height: 32px;
+            line-height: 50px;
             text-align: left;
             padding: 0;
-            margin-left: 0; // Netu is not good at this.
+            margin: 0;
+            width: 100%;
+
+            img.services__icon {
+                display: inline-block;
+                max-height: 50px;
+                width: 60px;
+                vertical-align: top;
+                margin: 0 8px 0 auto;
+            }
         }
 
         p.services__item-description {

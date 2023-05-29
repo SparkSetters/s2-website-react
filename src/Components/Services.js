@@ -46,10 +46,10 @@ function Services() {
                     return (
                         <Col size={3} sizeSm={12} key={index}>
                             <div className="services__item">
-                                <div className="services__item-header">
+                                <h3 className="services__item-title">
                                     <img src={service.icon} className="services__icon" alt="icon"/>
-                                    <h3 className="services__item-title">{service.title}</h3>
-                                </div>
+                                    {service.title}
+                                </h3>
                                 <p className="services__item-description">{service.description}</p>
                             </div>
                         </Col>
