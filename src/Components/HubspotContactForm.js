@@ -4,7 +4,7 @@ const HubspotContactForm = props => {
     const {region, portalId, formId} = props;
     useEffect(() => {
         const script = document.createElement('script');
-        script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+        script.src = '//js.hsforms.net/forms/embed/v2.js';
         document.body.appendChild(script);
 
         script.addEventListener('load', () => {

@@ -9,7 +9,7 @@ function Stats() {
         region: "na1",
         portalId: "23992815",
         formId: "ab49ef50-4a5b-40b5-b3af-577d10b77015"
-    }
+    };
     return (
         <section className={`contact`}>
             <Container>
