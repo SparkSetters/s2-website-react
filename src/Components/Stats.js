@@ -1,13 +1,14 @@
 import Container from "../Grid/Container";
 import Row from "../Grid/Row"
 import './Stats.scss';
+import Col from "../Grid/Col";
 
 const stats = {
-    '28': 'Projects completed',
-    '163': 'Communities forged',
+    '17': 'Projects completed',
+    '32': 'Communities forged',
+    '5,768': 'Cups of coffee',
     'Over 300K': 'Customers overjoyed',
-    'Over $45M': 'Revenue generated',
-    '15,768': 'Cups of coffee'
+    'Over $45M': 'Revenue generated'
 }
 
 function Stats() {
@@ -17,10 +18,12 @@ function Stats() {
                 <Row>
                     {Object.keys(stats).map((key, index) => {
                         return (
-                            <div className={`stats__item`} key={index}>
-                                <h2 className={`stats__title`}>{key}</h2>
+                            <Col className={`col-1-5th stats__item`} sizeSm={12} key={index}>
+                                <div className={`icon-title-container`}>
+                                    <h2 className={`stats__title`}>{key}</h2>
+                                </div>
                                 <p className={`stats__description`}>{stats[key]}</p>
-                            </div>
+                            </Col>
                         );
                     })}
                 </Row>

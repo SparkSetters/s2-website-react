@@ -26,38 +26,36 @@ section.stats {
             width: 100%;
         }
 
-
         .stats__item {
             display: flex;
             flex-direction: row;
-            max-width: 18%;
-
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
+            width: calc((100% / 5) * 1);
 
             .stats__title {
                 color: var(--color-white);
                 display: flex;
-                flex: 1 0 auto;
-                max-width: 33%;
-                padding-right: calc(var(--gutter) / 2);
+                flex: 1 1 auto;
             }
 
             .stats__description {
                 color: var(--color-gray-ish);
                 display: flex;
-                flex: 1 0 auto;
-                overflow: hidden;
-                max-width: 67%;
-                padding-left: calc(var(--gutter) / 2);
-
-                // Text needs to wrap
-                white-space: break-spaces
+                flex: 1 1 auto;
+                justify-content: flex-end;
+                max-width: 60%;
+                overflow: visible;
+                text-align: center;
             }
 
-            & + .stats__item {
+            &:not(:first-child) {
                 border-left: 1px solid #9797C1;
                 padding-left: var(--gutter);
+            }
+
+            &:not(:last-child) {
+                padding-right: var(--gutter);
             }
         }
     }
