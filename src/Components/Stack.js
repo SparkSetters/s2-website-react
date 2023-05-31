@@ -15,7 +15,7 @@ import Col from "../Grid/Col";
 function StackItem(props) {
 
     function showPlaceholder(el) {
-        console.log(el);
+        // Nothing here atm
     }
 
     return (
