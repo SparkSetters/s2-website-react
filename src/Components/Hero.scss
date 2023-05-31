@@ -94,9 +94,10 @@ section.hero {
             .hero__text {
                 font-size: 48px;
             }
+
             .hero__button {
                 &.margin {
-                    margin-top: 32px;
+                    margin-top: unset;
                 }
             }
         }

@@ -11,7 +11,7 @@ function Stats() {
         formId: "ab49ef50-4a5b-40b5-b3af-577d10b77015"
     };
     return (
-        <section className={`contact`}>
+        <section className={`contact`} id={`contact-us`}>
             <Container>
                 <Row>
                     <Col size={12}>

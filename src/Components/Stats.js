@@ -13,7 +13,7 @@ const stats = {
 
 function Stats() {
     return (
-        <section className={`stats`}>
+        <section className={`stats`} id={`about-us`}>
             <Container className={`stats__container`}>
                 <Row>
                     {Object.keys(stats).map((key, index) => {

@@ -6,7 +6,7 @@ import Col from "../Grid/Col";
 
 function Hero() {
     return (
-        <section className={`hero`}>
+        <section className={`hero`} id={`home`}>
             <Container>
                 <Row>
                     <Col size={4} pull={`left`} contentJustify={`center`}>
