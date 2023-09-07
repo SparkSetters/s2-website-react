@@ -26,6 +26,7 @@ section.projects {
             height: auto;
             object-fit: cover;
             object-position: center;
+            max-width: 100%;
         }
 
         label.projects__item-overlay {
@@ -36,7 +37,6 @@ section.projects {
             height: 100%;
             display: flex;
             flex-direction: column;
-            // center vertically with flexbox
             justify-content: center;
             align-items: center;
             gap: 16px;
@@ -87,12 +87,38 @@ section.projects {
             }
         }
     }
+
     @media (#{$bp-small}) {
         .col:not(:first-child) {
             margin-top: 0;
         }
+        
         .projects__item:last-child {
             margin-bottom: 0;
+        }
+        
+        div.projects__item {
+            margin-bottom: var(--smaller-gutter);
+        }
+        
+        h3.projects__item-title {
+            font-size: 20px;
+        }
+        
+        p.projects__item-description {
+            font-size: 12px;
+        }
+        
+        label.projects__item-overlay {
+            padding: 1.5em;
+        }
+    }
+    
+    @media (#{$bp-small}) {
+        section.projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
         }
     }
 }
