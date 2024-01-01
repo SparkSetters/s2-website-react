@@ -5,11 +5,6 @@ import Row from "../Grid/Row";
 import Col from "../Grid/Col";
 
 function Stats() {
-    const hubspotFormOptions = {
-        region: "na1",
-        portalId: "23992815",
-        formId: "ab49ef50-4a5b-40b5-b3af-577d10b77015"
-    };
     return (
         <section className={`contact`} id={`contact-us`}>
             <Container>
@@ -20,11 +15,7 @@ function Stats() {
                     </Col>
                 </Row>
                 <Row>
-                    <HubspotContactForm
-                        region={hubspotFormOptions.region}
-                        portalId={hubspotFormOptions.portalId}
-                        formId={hubspotFormOptions.formId}
-                    />
+                    Contact <a href="mailto:netu@sparksetters.com">netu@sparksetters.com</a> to schedule a call.
                 </Row>
             </Container>
         </section>

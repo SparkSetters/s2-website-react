@@ -18,7 +18,7 @@ const services = [
     {
         icon: webdev,
         title: `Web Development`,
-        description: `We will (re)design your website, optimizing it for modern search engines and that magical marketing science sauce. We will make sure your users can find your business, even if we have to rely on`
+        description: `We will (re)design your website, optimizing it for modern search engines and that magical marketing science sauce. We will make sure your users can find your business.`
     },
     {
         icon: ecommerce,
