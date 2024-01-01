@@ -37,4 +37,23 @@ section.contact {
         border-radius: var(--gutter);
         margin: 60px 0;
     }
+    
+    .contact__info {
+        color: var(--color-white);
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+        text-align: center;
+        clear: both;
+        height: auto;
+        overflow: hidden;
+        margin-top: 35px;
+        margin-bottom: 35px;
+
+        a, a:visited, a:hover, a:active {
+            color: var(--color-orange);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
 }

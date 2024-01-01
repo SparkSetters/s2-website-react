@@ -1,6 +1,5 @@
 import Container from "../Grid/Container";
 import './Contact.scss';
-import HubspotContactForm from "./HubspotContactForm";
 import Row from "../Grid/Row";
 import Col from "../Grid/Col";
 
@@ -14,7 +13,7 @@ function Stats() {
                         <p className={`contact__text`}>Ready to take your business to the next level?</p>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="contact__info">
                     Contact <a href="mailto:netu@sparksetters.com">netu@sparksetters.com</a> to schedule a call.
                 </Row>
             </Container>
