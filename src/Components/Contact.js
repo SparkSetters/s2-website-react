@@ -14,7 +14,7 @@ function Stats() {
                     </Col>
                 </Row>
                 <Row className="contact__info">
-                    Contact <a href="mailto:netu@sparksetters.com">netu@sparksetters.com</a> to schedule a call.
+                    <a href="https://outlook.office365.com/owa/calendar/SparkSettersDevelopment@sparksetters.com/bookings/">Click here</a> to schedule a call.
                 </Row>
             </Container>
         </section>
